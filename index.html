@@ -1,0 +1,90 @@
+<!DOCTYPE>
+<html
+>
+	<head>
+		<title>Submit Event</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<h1 class="bg-primary text-white text-center mt-4 p-4">Submit Event</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<form id="myForm">
+						<div class="form-group">
+							<label for="fullname">Fullname</label>
+							<input type="fullname" class="form-control" id="fullname" placeholder="Fullname">
+						</div>
+						<div class="form-group">
+							<label for="email">Email Id</label>
+							<input type="email" class="form-control" id="email" placeholder="Email">
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label for="selectBatch" class="">Education</label>
+								<select name="batch" class="form-control mb-4" id="selectBatch">
+									<option value="B1">Batch 1</option>
+									<option value="B2">Batch 2</option>
+									<option value="B3">Batch 3</option>
+									<option value="B4">Batch 4</option>
+									<option value="B5">Batch 5</option>
+								</select>
+							</div>
+							<div class="col-md-6">
+								<label for="gender">Gender</label>
+								<div class="form-group">
+									<input type="radio" name="gender" id="male" value="male" class="gender">
+									<label for="male">Male</label>
+									<input type="radio" name="gender" id="female" value="female" class="gender">
+									<label for="female">Female</label>
+									<input type="radio" name="gender" id="other" value="other" class="gender">
+									<label for="other">other</label>
+								</div>
+							</div>
+						</div>
+						<label for="skills">Skills</label>
+						<div class="fom-group">
+							<input type="checkbox" name="html" id="html" value="html" class="skills">
+							<label for="html">HTML</label>&nbsp;&nbsp;
+							<input type="checkbox" name="css" id="css" value="css" class="skills">
+							<label for="css">CSS</label>&nbsp;&nbsp;
+							<input type="checkbox" name="javaScript" id="javaScript" value="javaScript" class="skills">
+							<label for="javaScript">javaScript</label>&nbsp;&nbsp;
+							<input type="checkbox" name="angular" id="angular" value="angular" class="skills">
+							<label for="angular">Angular</label>&nbsp;&nbsp;
+						</div>
+						<div class="form-group">
+							<input type="checkbox" name="agree" id="agree" value="true">
+							<label for="agree">I agree conditions</label>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-primary">Submit</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-7">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Sr. No.</th>
+								<th>Full Name</th>
+								<th>Email Id</th>
+								<th>Batch</th>
+								<th>Gender</th>
+								<th>CheckBox</th>
+								<th>Skills</th>
+							</tr>
+						</thead>
+						<tbody id="tbody">
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script src="./assets/js/app.js"></script>
+	</body>
+</html
+>

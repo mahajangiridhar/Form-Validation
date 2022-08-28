@@ -1,0 +1,31 @@
+let cl = console.log;
+
+let myForm = document.getElementById("myForm")
+
+myForm.addEventListener("submit", submitForm)
+
+function submitForm(event){
+	event.preventDefault();
+	let emailInputControl = document.getElementById("email").value;
+	let passwordInputControl = document.getElementById("password").value;
+	let obj = {
+		Email : emailInputControl,
+		Password : passwordInputControl
+	}
+	cl(obj)
+	myForm.reset();
+}
+
+let myPassword = document.getElementById("password")
+let showBtn = document.getElementById("showBtn");
+let flag = true;
+showBtn.addEventListener("click", clickToshow)
+
+function clickToshow(e){
+	if(flag === true){
+		myPassword.setAttribute("type", "text")
+		flag = false;
+	}else{
+		myPassword.setAttribute("type", "password")
+	}
+}
